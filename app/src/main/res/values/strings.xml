@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="geology_quiz">Geology Quiz</string>
+    <string name="hint">Type your name</string>
+    <string name="question1">Question 1: How old is the Earth?</string>
+    <string name="billion10_6">10.6 billion years old</string>
+    <string name="billion4_6">4.6 billion years old</string>
+    <string name="billion1_6">1.6 billion years old</string>
+    <string name="question2">Question 2: What is a fault?</string>
+    <string name="fossil">A type of fossil</string>
+    <string name="volcano">A type of volcano</string>
+    <string name="fracture">A fracture in the Earth</string>
+    <string name="question3">Question 3: What is an aquifer?</string>
+    <string name="mineral">A mineral</string>
+    <string name="lava_in_sea">Lava in the sea</string>
+    <string name="store_of_water">A store for water</string>
+    <string name="question4">Question 4: Which of the following are types of rocks?</string>
+    <string name="sedimentary">Sedimentary</string>
+    <string name="oil">Oil</string>
+    <string name="igneous">Igneous</string>
+    <string name="metamorphic">Metamorphic</string>
+    <string name="question5">Question 5: Which surface layer of the earth is made up of solid rock?</string>
+    <string name="hintForAnswer">Type your answer</string>
+
+    <string name="submit">Submit</string>
+</resources>
+

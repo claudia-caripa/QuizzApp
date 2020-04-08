@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/geology_quiz" />
+
+        <EditText
+            android:id="@+id/name_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:hint="@string/hint"/>
+
+        <TextView
+            style="@style/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question1" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer1_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstOnRadioButtonClicked"
+                android:text="@string/billion10_6" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstOnRadioButtonClicked"
+                android:text="@string/billion4_6" />
+
+            <RadioButton
+                android:id="@+id/answer3_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstOnRadioButtonClicked"
+                android:text="@string/billion1_6" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer1_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondOnRadioButtonClicked"
+                android:text="@string/fossil" />
+
+            <RadioButton
+                android:id="@+id/answer2_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondOnRadioButtonClicked"
+                android:text="@string/volcano" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondOnRadioButtonClicked"
+                android:text="@string/fracture" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question3" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer1_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdOnRadioButtonClicked"
+                android:text="@string/mineral" />
+
+            <RadioButton
+                android:id="@+id/answer2_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdOnRadioButtonClicked"
+                android:text="@string/lava_in_sea" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdOnRadioButtonClicked"
+                android:text="@string/store_of_water" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4" />
+
+        <CheckBox
+            android:id="@+id/answer1_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sedimentary" />
+
+        <CheckBox
+            android:id="@+id/answer2_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oil" />
+
+        <CheckBox
+            android:id="@+id/answer3_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/igneous" />
+
+        <CheckBox
+            android:id="@+id/answer4_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/metamorphic" />
+
+        <TextView
+            style="@style/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question5" />
+
+        <EditText
+            android:id="@+id/answer5_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textCapWords"
+            android:hint="@string/hintForAnswer"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showScore"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+
+</ScrollView>
