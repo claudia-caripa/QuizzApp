@@ -40,20 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     isCorrect1 = true;
                 // Go to next question
                 break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer1_q1:
-                if (checked)
-                    isCorrect1 = false;
-                // Go to next question
-                break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer3_q1:
-                if (checked)
-                    isCorrect1 = false;
+            default:
+                isCorrect1 = false;
                 // Go to next question
                 break;
         }
@@ -75,19 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     isCorrect2 = true;
                 // Go to next question
                 break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer1_q2:
-                if (checked)
-                    isCorrect2 = false;
-                // Go to next question
-                break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer2_q2:
-                if (checked)
+            default:
                     isCorrect2 = false;
                 // Go to next question
                 break;
@@ -109,18 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     isCorrect3 = true;
                 // Go to next question
                 break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer1_q3:
-                if (checked)
-                    isCorrect3 = false;
-                // Go to next question
-                break;
-        }
-
-        switch (view.getId()) {
-            case R.id.answer2_q3:
+            default:
                 if (checked)
                     isCorrect3 = false;
                 // Go to next question
