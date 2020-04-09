@@ -1,15 +1,14 @@
 package com.example.quizapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -119,24 +118,23 @@ public class MainActivity extends AppCompatActivity {
         CheckBox isSedimentary = (CheckBox) findViewById(R.id.answer1_q4);
         boolean correct1_q4 = isSedimentary.isChecked();
 
+        CheckBox isOil = (CheckBox) findViewById(R.id.answer2_q4);
+        boolean incorrect_q4 = isOil.isChecked();
+
         CheckBox isIgneous = (CheckBox) findViewById(R.id.answer3_q4);
         boolean correct2_q4 = isIgneous.isChecked();
 
         CheckBox isMetamorphic = (CheckBox) findViewById(R.id.answer4_q4);
         boolean correct3_q4 = isMetamorphic.isChecked();
 
-        if (correct1_q4) {
-            if (correct2_q4) {
-                if (correct3_q4) {
-                    score++;
-                }
-            }
+        if (correct1_q4 && correct2_q4 && correct3_q4 && !incorrect_q4) {
+            score++;
         }
 
         EditText question5 = (EditText) findViewById(R.id.answer5_text_input);
         String answerQuestion5 = question5.getText().toString();
 
-        if (answerQuestion5.equals("Crust")) {
+        if (answerQuestion5.equalsIgnoreCase("Crust")) {
             score++;
         }
 
@@ -146,11 +144,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Display the final score using a Toast
-        Context context = getApplicationContext();
-        CharSequence text = "Hello " + name + " ,your score is: " + score;
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if (score == 5) {
+            CharSequence text = "Congratulations " + name + " ,your score is: " + score + "/5.";
+            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
+        } else {
+            CharSequence text = "Try again " + name + " ,your score is: " + score + "/5.";
+            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
+        }
     }
 
 }
